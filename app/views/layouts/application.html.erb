@@ -5,10 +5,35 @@
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->    
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+    <div class="header">
+	 <%= image_tag("logo.png", :alt => "AWE", :class => "round") %>
+	<nav class="round">
+	  <ul>
+	    <li><%= link_to "Home", root_path %></li>
+	    <li><%= link_to "ListFree", listfree_path %></li>
+	    <li><%= link_to "ListGroups", listgroups_path %></li>
+	  </ul>
+	</nav>
+    </div>
+    <section class="round">
+      <%= yield %>
+    </section>
+  </div>
+  <div class="footer">
+    <nav class="round">
+      <ul>
+	<li><%= link_to "About", about_path %></li>
+	<li><%= link_to "Contact", contact_path %></li>
+	<li><a href="http://news.railstutorial.org/">News</a></li>
+	<li><a href="http://www.railstutorial.org/">Rails Tutorial</a></li>
+      </ul>
+    </nav>
+  </div>
 </body>
 </html>
