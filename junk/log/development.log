@@ -1,0 +1,445 @@
+
+
+Started GET "/pages.html" for 127.0.0.1 at 2011-02-21 14:53:34 +0100
+
+ActionController::RoutingError (No route matches "/pages.html"):
+  
+
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-02-21 14:53:42 +0100
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:16:10 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:24:09 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:29:30 +0100
+  Processing by PagesController#about as HTML
+ERROR: compiling _app_views_layouts_application_html_erb__2427094400712978481_2158941220_1488962448254742018 RAISED /Users/Crest/rails_projects/sample_app/app/views/layouts/application.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...utput_buffer.append= ( @title "foo" );@output_buffer.safe_co...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb__2427094400712978481_2158941220_1488962448254742018(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby on Rails Tutorial Sample App | ');@output_buffer.append= ( @title "foo" );@output_buffer.safe_concat(' </title>
+  ');@output_buffer.append= ( stylesheet_link_tag :all );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+
+');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:255:in `module_eval'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:255:in `compile'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `block in render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:62:in `block in _render_template'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `block in instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/opt/local/lib/ruby1.9/1.9.1/benchmark.rb:309:in `realtime'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__3527148517713105086__process_action__2972522238238365667__callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `block in instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `block in action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+/opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+/opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered pages/about.html.erb within layouts/application (22.3ms)
+Completed   in 28ms
+
+ActionView::Template::Error (/Users/Crest/rails_projects/sample_app/app/views/layouts/application.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...utput_buffer.append= ( @title "foo" );@output_buffer.safe_co...
+...                               ^):
+    1: <!DOCTYPE html>
+    2: <html>
+    3: <head>
+    4:   <title>Ruby on Rails Tutorial Sample App | <%= @title "foo" %> </title>
+    5:   <%= stylesheet_link_tag :all %>
+    6:   <%= javascript_include_tag :defaults %>
+    7:   <%= csrf_meta_tag %>
+  
+
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (76.6ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:29:50 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:30:38 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:30:59 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:31:06 +0100
+  Processing by PagesController#about as HTML
+ERROR: compiling _app_views_layouts_application_html_erb__2427094400712978481_2157900720_1488962448254742018 RAISED /Users/Crest/rails_projects/sample_app/app/views/layouts/application.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...utput_buffer.append= ( @title "bar" );@output_buffer.safe_co...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb__2427094400712978481_2157900720_1488962448254742018(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby on Rails Tutorial Sample App | ');@output_buffer.append= ( @title "bar" );@output_buffer.safe_concat(' </title>
+  ');@output_buffer.append= ( stylesheet_link_tag :all );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+
+');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:255:in `module_eval'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:255:in `compile'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `block in render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:62:in `block in _render_template'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `block in instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/opt/local/lib/ruby1.9/1.9.1/benchmark.rb:309:in `realtime'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__3527148517713105086__process_action__2972522238238365667__callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `block in instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `block in action'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+/opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+/opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered pages/about.html.erb within layouts/application (1.3ms)
+Completed   in 6ms
+
+ActionView::Template::Error (/Users/Crest/rails_projects/sample_app/app/views/layouts/application.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...utput_buffer.append= ( @title "bar" );@output_buffer.safe_co...
+...                               ^):
+    1: <!DOCTYPE html>
+    2: <html>
+    3: <head>
+    4:   <title>Ruby on Rails Tutorial Sample App | <%= @title "bar" %> </title>
+    5:   <%= stylesheet_link_tag :all %>
+    6:   <%= javascript_include_tag :defaults %>
+    7:   <%= csrf_meta_tag %>
+  
+
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 15:31:10 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-02-21 16:00:06 +0100
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-02-21 17:56:03 +0100
+
+ActionController::RoutingError (No route matches "/users"):
+  
+
+Rendered /opt/local/lib/ruby1.9/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-02-21 17:56:12 +0100
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (72.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (4.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (1.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20110221180223)
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fb3name" varchar(255), "name" varchar(255), "sem" integer, "course" varchar(255), "pubkey" varchar(255), "group" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110221180223')
+Migrating to CreateGroups (20110221180402)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110221180402')
+Migrating to CreateProjects (20110221180434)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "descr" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110221180434')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("projects")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "projects" ("name", "descr", "created_at", "updated_at") VALUES (NULL, NULL, '2011-02-21 18:07:01.067972', '2011-02-21 18:07:01.067972')
+  [1m[36mAREL (0.6ms)[0m  [1mUPDATE "projects" SET "name" = 'foo', "descr" = 'dhkjhsdjkfhdskughsdjlghsdkfjgdskjfhgsdkfjgdfskjgfuwezgoubcjxbczuse', "updated_at" = '2011-02-21 18:07:38.404018' WHERE "projects"."id" = 1[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "projects" SET "name" = 'baz', "descr" = 'blub', "updated_at" = '2011-02-21 18:09:18.961749' WHERE "projects"."id" = 1
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE "projects" SET "name" = 'foz', "updated_at" = '2011-02-21 18:10:51.071630' WHERE "projects"."id" = 1[0m
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = 1 LIMIT 1
+  [1m[36mAREL (1.6ms)[0m  [1mINSERT INTO "users" ("fb3name", "name", "sem", "course", "pubkey", "group", "created_at", "updated_at") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '2011-02-21 18:19:06.751153', '2011-02-21 18:19:06.751153')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "groups" ("project", "created_at", "updated_at") VALUES (NULL, '2011-02-21 18:20:06.987239', '2011-02-21 18:20:06.987239')
+  [1m[36mAREL (0.6ms)[0m  [1mUPDATE "users" SET "fb3name" = 'crest', "name" = 'Jan Bramkamp', "sem" = 5, "course" = 'Dipl. Inf.', "updated_at" = '2011-02-21 18:20:56.072976' WHERE "users"."id" = 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE "users" SET "name" = 'Daniel', "updated_at" = '2011-02-21 18:32:25.434609' WHERE "users"."id" = 1[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE "users" SET "name" = 'Jan Bramkamp', "updated_at" = '2011-02-21 18:34:42.125437' WHERE "users"."id" = 1[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mAREL (1.8ms)[0m  [1mUPDATE "users" SET "updated_at" = '2011-02-21 18:36:41.408738' WHERE "users"."id" = 1[0m
+  [1m[36mProject Load (0.9ms)[0m  [1mSELECT "projects".* FROM "projects" LIMIT 1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" LIMIT 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (1.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mGroup Load (1.0ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" LIMIT 1[0m
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "groups" SET "updated_at" = '2011-02-21 18:43:04.250234' WHERE "groups"."id" = 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" LIMIT 1[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups" LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"

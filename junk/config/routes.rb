@@ -1,8 +1,17 @@
 SampleApp::Application.routes.draw do
+  get "users/register_user"
+
+  get "users/delete_user"
+
+  get "users/free_user"
+
+  get "users/new"
+
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/listfree', :to => 'pages#listfree'
   match '/listgroups', :to => 'pages#listgroups'
+  
   
   root :to => 'pages#home'
 
